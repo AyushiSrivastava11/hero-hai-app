@@ -1,44 +1,43 @@
 import Image from "next/image";
-import picture from "@/assets/stray-bird.jpg";
 
 const topFeatures = [
   {
-    name: "Personalised Solution.",
+    name: "Transparency Dashboard.",
     description:
-      "They enhance the user experience and improve the quality of care by tailoring services based on personal health data, preferences, and behaviors.",
+      "A real-time transparency dashboard that shows exactly how donations are being utilized. Donors can track the allocation of their contributions, view project progress, and see the impact their donations are making on the community. This builds trust and encourages ongoing support.",
   },
   {
-    name: "Chat with Doctors.",
+    name: "Donor Impact Stories.",
     description:
-      "A robust chat system in telemedicine apps facilitates seamless communication between patients and healthcare providers.",
+      "Personalized updates and stories from individuals or communities who have benefited from the donations. These stories could include photos, videos, and testimonials, providing a tangible sense of the difference donors are making. This feature can be enhanced with a 'Thank You' note directly from the beneficiaries.",
   },
   {
-    name: "Video Meeting.",
+    name: "Recurring Donation Options with Progress Tracking.",
     description:
-      "High-quality, real-time video and audio for virtual consultations. Secure and encrypted communication to protect patient privacy.",
+      "A feature allowing donors to set up recurring donations with the ability to track the cumulative impact over time. This could include milestone celebrations (e.g., 100 meals provided, 50 shelters built) and offer badges or certificates as rewards for reaching certain milestones, fostering a sense of accomplishment and ongoing commitment.",
   },
 ];
 
 const bottomFeatures = [
   {
-    name: "Remote Monitoring.",
+    name: "AI-Powered Donation Matching.",
     description:
-      "Continuous monitoring of chronic conditions through connected devices. Alerts and notifications for healthcare providers in case of abnormal readings.",
+      "An AI algorithm that analyzes donor preferences, past donations, and current community needs to suggest the most impactful causes for each donor. This could also include matching donors with specific projects or individuals, ensuring their contributions align with their personal values and desired outcomes.",
   },
   {
-    name: "Integration with H.I.S.",
+    name: "Blockchain-Based Donation Tracking",
     description:
-      "Seamless integration with hospital management systems and other healthcare platforms. Seamless integration with hospital management systems and other healthcare platforms.",
+      "Integrating blockchain technology for secure, transparent, and immutable tracking of all transactions. Donors can verify how and where their money is being spent, ensuring that funds are used as intended. This feature enhances accountability and can be a significant trust factor for potential donors.",
   },
   {
-    name: "Multi-language Support.",
+    name: "Smart Contract Donations.",
     description:
-      "Language options to cater to a diverse user base. Real-time translation services for consultations.",
+      "Allowing donations to be tied to smart contracts that release funds only when certain conditions are met (e.g., a project reaches a specific phase, or a particular community need is verified). This ensures that funds are used efficiently and only for their intended purpose, offering donors more control over their contributions..",
   },
   {
-    name: "Analytics and Reporting.",
+    name: "Impact Visualization and Analytics.",
     description:
-      "Tools for analyzing patient data and generating reports. Dashboards for tracking health metrics and outcomes.",
+      "A feature that provides advanced data analytics and visualizations to show the broader impact of donations over time. This could include metrics like community health improvements, educational achievements, or environmental restoration progress. Donors can access detailed reports and infographics, helping them understand the long-term effects of their contributions.",
   },
 ];
 
@@ -57,8 +56,8 @@ export default function Features() {
                   The Best Features.
                 </p>
                 <p className="mt-6 text-lg leading-8 text-white">
-                  Tele Funicular provides user friendly solutions to all the
-                  pataients in need with excilent healthcare services.
+                  Hero Hai App provides a easy to manage donation dashboard, and
+                  it makes donating easy for people.
                 </p>
                 <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-white lg:max-w-none">
                   {topFeatures.map((feature) => (
@@ -73,11 +72,11 @@ export default function Features() {
               </div>
             </div>
             <Image
-              src={picture}
+              src="https://utfs.io/f/3e7b25bb-2c62-4337-8720-cc7b76eb5759-3serbx.jpg"
               alt="Product screenshot"
-              className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+              className="w-[48rem] min-h-screen max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
               width={2432}
-              height={1442}
+              height={1456}
             />
           </div>
         </div>

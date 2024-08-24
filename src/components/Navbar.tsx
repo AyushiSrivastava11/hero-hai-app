@@ -3,11 +3,11 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 
 const Navbar = () => {
-  const user = false;
+  const user = true;
   return (
     <nav className="h-16 w-full flex justify-center text-center items-center pr-8 pl-8">
       <Button variant="secondary">
-        <Link href="/help">Ask Help</Link>
+        <Link href="/create-help">Ask Help</Link>
       </Button>
       <Button variant="secondary" className="mr-4 ml-4">
         <Link href="/">About</Link>
@@ -21,7 +21,7 @@ const Navbar = () => {
       ) : (
         <div className="flex">
           <Button>
-            <Link href="/">Help Others</Link>
+            <Link href="/help-others">Help Others</Link>
           </Button>
           <Button className="ml-4">
             <Link href="/">Active Account</Link>

@@ -1,5 +1,4 @@
 import React from "react";
-import stray_dog from "@/assets/stray-dog.jpg";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Features from "@/components/landing/Features.componensts";
@@ -26,8 +25,10 @@ const HomePage = () => {
       </div>
       <div className="min-h-screen w-full flex">
         <Image
-          src={stray_dog}
+          src="https://utfs.io/f/3ed4dc31-5aa3-4b74-9e0f-a8c2554adc44-6s14dk.jpg"
           alt="dashboard"
+          width={5000}
+          height={5000}
           className="max-h-screen w-1/2 rounded-tr-lg rounded-br-lg"
         />
         <div className="w-full">

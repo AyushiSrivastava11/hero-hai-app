@@ -14,47 +14,58 @@ export default function AccordionSection() {
       <br />
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1">
-          <AccordionTrigger>What is telemedicine?</AccordionTrigger>
+          <AccordionTrigger>What is Hero Hai App?</AccordionTrigger>
           <AccordionContent>
-            Telemedicine is the use of digital communication technologies, such
-            as video calls and messaging, to provide medical care and
-            consultation remotely.
+            Hero Hai App is a community powered donation platform which makes
+            easy for people to ask for donation and donate.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
-          <AccordionTrigger>How do I schedule an appointment?</AccordionTrigger>
+          <AccordionTrigger>
+            How does the donation process work?
+          </AccordionTrigger>
           <AccordionContent>
-            You can schedule an appointment through the telemedicine app by
-            selecting a suitable date and time, often with an option to choose
-            your preferred healthcare provider.
+            When you make a donation, the funds are securely transferred to the
+            selected project or community. You can choose to donate a one-time
+            amount or set up a recurring donation. Once the donation is
+            processed, you'll receive a confirmation email and a receipt for
+            your records. You can then track the impact of your donation through
+            our Transparency Dashboard.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
-          <AccordionTrigger>Is telemedicine secure?</AccordionTrigger>
+          <AccordionTrigger>
+            Can I specify where my donation is used?
+          </AccordionTrigger>
           <AccordionContent>
-            Yes, telemedicine platforms use encryption and adhere to privacy
-            regulations like HIPAA to ensure that your medical information is
-            secure and confidential.
+            Yes, our platform allows you to choose specific projects or causes
+            where you'd like your donation to be applied. You can browse through
+            various ongoing initiatives and select the one that resonates most
+            with you. If you prefer, you can also let our AI-powered system
+            match your donation to the most urgent needs.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-4">
-          <AccordionTrigger>
-            What types of medical issues can be addressed via telemedicine?
-          </AccordionTrigger>
+          <AccordionTrigger>Is my donation tax-deductible?</AccordionTrigger>
           <AccordionContent>
-            Telemedicine can handle a variety of issues, including routine
-            check-ups, follow-ups, chronic condition management, minor
-            infections, mental health consultations, and prescription refills.
+            In most cases, donations made through our platform are
+            tax-deductible. After completing your donation, you'll receive an
+            official receipt that can be used for tax purposes. Please consult
+            with a tax professional to confirm the deductibility of your
+            donation based on your local regulations.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-5">
           <AccordionTrigger>
-            Do I need special equipment for a telemedicine appointment?
+            How can I be sure my donation is being used effectively?
           </AccordionTrigger>
           <AccordionContent>
-            Typically, you only need a smartphone, tablet, or computer with an
-            internet connection, a camera, and a microphone for video
-            consultations.
+            We prioritize transparency and accountability. Our Blockchain-Based
+            Donation Tracking feature ensures that every transaction is recorded
+            and can be verified. You can see exactly how your donation is being
+            used and track the progress of the projects you've supported.
+            Additionally, our Impact Visualization and Analytics tool provides
+            detailed reports on the outcomes of your contributions.
           </AccordionContent>
         </AccordionItem>
       </Accordion>

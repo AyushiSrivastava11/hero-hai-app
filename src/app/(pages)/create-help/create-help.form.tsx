@@ -20,7 +20,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import helpFormSchema from "@/zod_schema/help.schema";
 
-const HelpForm = () => {
+const CreateHelpForm = () => {
   const { toast } = useToast();
   const router = useRouter();
 
@@ -47,22 +47,6 @@ const HelpForm = () => {
     help.donation = values.donation;
     help.helpline = values.helpline;
     console.log(help);
-
-    // try {
-    //   const response = await axios.post("/api/user/signup", users);
-    //   console.log("Signup success", response.data);
-    //   toast({
-    //     title: "Account Created Successfully",
-    //   });
-    //   router.push("/login");
-    // } catch (error: any) {
-    //   console.log("Signup failed", error.message);
-    //   toast({
-    //     variant: "destructive",
-    //     title: "Account Already Exists",
-    //     description: "Please use another email.",
-    //   });
-    // }
   };
 
   return (
@@ -112,7 +96,7 @@ const HelpForm = () => {
                 name="donation"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Donation</FormLabel>
+                    <FormLabel>Donation Amount</FormLabel>
                     <FormControl>
                       <Input placeholder="" type="string" {...field} />
                     </FormControl>
@@ -127,7 +111,7 @@ const HelpForm = () => {
                 name="helpline"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Helpline</FormLabel>
+                    <FormLabel>Helpline Number</FormLabel>
                     <FormControl>
                       <Input placeholder="" type="text" {...field} />
                     </FormControl>
@@ -146,4 +130,4 @@ const HelpForm = () => {
   );
 };
 
-export default HelpForm;
+export default CreateHelpForm;

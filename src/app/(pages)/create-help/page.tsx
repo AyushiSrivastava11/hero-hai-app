@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import HelpForm from "./help.form";
+import HelpForm from "./create-help.form";
 
-const HelpPage = () => {
+const CreateHelpPage = () => {
   return (
     <main className="flex w-full">
       <div className="flex-1 min-h-screen">
@@ -27,13 +27,9 @@ const HelpPage = () => {
           <div className="relative z-20 mt-auto">
             <blockquote className="space-y-2">
               <p className="text-lg">
-                &ldquo;The great doctors all got their education off dirt
-                pavements and poverty - not marble floors and
-                foundations.&rdquo;
+                &ldquo;Provding best medical care to animals with the power of
+                the community. &rdquo;
               </p>
-              <footer className="text-sm">
-                - Martin H. Fischer (1879 - 1962).
-              </footer>
             </blockquote>
           </div>
         </div>
@@ -47,4 +43,4 @@ const HelpPage = () => {
   );
 };
 
-export default HelpPage;
+export default CreateHelpPage;
