@@ -1,1 +1,5 @@
-// Login user by checking if the user already exists
+import { NextRequest, NextResponse } from "next/server";
+
+export const GET = async (req: NextRequest) => {
+  return NextResponse.json({ message: "Hello" }, { status: 200 });
+};
