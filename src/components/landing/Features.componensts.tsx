@@ -51,7 +51,7 @@ export default function Features() {
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
                 <h2 className="text-base font-semibold leading-7 text-[#179646]">
-                  Tele FUNICULAR
+                  Hero Hai App
                 </h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
                   The Best Features.
