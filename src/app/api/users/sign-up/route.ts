@@ -1,23 +1,25 @@
-import type { NextApiRequest, NextApiResponse } from "next";
-import { User } from "@/model/schemas";
+import { NextRequest, NextResponse } from "next/server";
+import User from "@/model/schema/user.schema";
 import { hashPassword } from "@/utils/cryptography.util";
+import dbConnect from "@/lib/db";
 
 /**
  * Sign Up Route Handler
  */
-const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-  if (req.method === "POST") {
-    const { email, password } = req.body;
+export const POST = async (req: NextRequest) => {
+  try {
+    await dbConnect();
+    const { email, password } = await req.json();
     const user = await User.findOne({ email });
     if (user) {
-      return res.status(400).json({ message: "User already exists" });
+      return NextResponse.json({ message: "User already exists" }, { status: 400 });
     }
     const hashedPassword = await hashPassword(password);
-    const newUser = new User({ email, hashedPassword });
+    const newUser = new User({ email, password: hashedPassword });
     await newUser.save();
-    return res.status(201).json({ message: "User created successfully" });
+    return NextResponse.json({ message: "User created successfully" }, { status: 201 });
+  } catch (error) {
+    console.error("Error in Sign Up Route Handler", error);
+    return NextResponse.json({ message: "Internal Server Error" }, { status: 500 });
   }
-  return res.status(405).json({ message: "Method not allowed" });
 };
-
-export default handler;

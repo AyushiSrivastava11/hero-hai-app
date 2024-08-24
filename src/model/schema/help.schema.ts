@@ -5,9 +5,7 @@ export interface IHelpRequest extends Document {
   userId: mongoose.Schema.Types.ObjectId;
   title: string;
   description: string;
-  //help_type: string;
   amount: number;
-  createdBy: mongoose.Schema.Types.ObjectId;
   status: string;
   createdAt: Date;
   updatedAt: Date;
@@ -36,12 +34,7 @@ const helpRequestSchema = new mongoose.Schema({
     required: true,
   },
 
-  createdBy: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "User",
-    required: true,
-  },
-  serviceType: { type: String },
+  
 
   status: {
     type: String,

@@ -1,11 +1,12 @@
-import type { NextApiRequest, NextApiResponse } from "next";
+import { NextRequest, NextResponse } from "next/server";
 import { serialize, CookieSerializeOptions } from "cookie";
 
 /**
  * Logout user by clearing the authentication cookie
  */
-const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-  if (req.method === "POST") {
+
+export const POST = async (req: NextRequest) => {
+  try {
     // Clear the cookie by setting it with a past expiration date
     const cookieOptions: CookieSerializeOptions = {
       httpOnly: true,
@@ -14,11 +15,21 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       expires: new Date(0), // Set the cookie to expire in the past
     };
 
-    res.setHeader("Set-Cookie", serialize("access_token", "", cookieOptions));
-    return res.status(200).json({ message: "User logged out successfully" });
+    const cookie = serialize("access_token", "", cookieOptions);
+
+    return NextResponse.json(
+      { message: "User logged out successfully" },
+      {
+        status: 200,
+        headers: {
+          "Set-Cookie": cookie,
+        },
+      }
+    );
+  } catch (error) {
+    return NextResponse.json(
+      { message: "An error occurred while logging out" },
+      { status: 500 }
+    );
   }
-
-  return res.status(405).json({ message: "Method not allowed" });
 };
-
-export default handler;
