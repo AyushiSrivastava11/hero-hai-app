@@ -44,7 +44,7 @@ const bottomFeatures = [
 export default function Features() {
   return (
     <>
-      <div className="overflow-hidden bg-[#1e1e1e] text-white py-24 sm:py-32">
+      <div className="overflow-hidden bg-[#333333] text-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
@@ -81,7 +81,7 @@ export default function Features() {
           </div>
         </div>
       </div>
-      <div className="bg-[#1e1e1e] text-white py-24 sm:py-32">
+      <div className="bg-[#333333] text-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
             <h2 className="text-base font-semibold leading-7 text-[#179646]">

@@ -15,7 +15,7 @@ const HomePage = () => {
     "people in need",
   ];
   return (
-    <main className="bg-[#1E1E1E] ">
+    <main className="bg-[#333333] ">
       <div className="min-h-screen flex justify-center items-center px-4 dark">
         <div className="text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
           Helping

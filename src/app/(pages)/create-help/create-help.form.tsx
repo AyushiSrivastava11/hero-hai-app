@@ -121,7 +121,9 @@ const CreateHelpForm = () => {
               />
             </div>
             <div className="py-3">
-              <Button type="submit">Submit</Button>
+              <Button type="submit">
+                <Link href="/helpcreation-thanks">Submit</Link>
+              </Button>
             </div>
           </form>
         </Form>

@@ -6,7 +6,7 @@ import { ContainerScroll } from "./containscrolling";
 
 export default function ContainerScrollAnimation() {
   return (
-    <div className="flex flex-col overflow-hidden bg-[#1e1e1e]">
+    <div className="flex flex-col overflow-hidden bg-[#333333]">
       <ContainerScroll
         titleComponent={
           <>

@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 interface CardProps {
   userId: number;
@@ -52,7 +53,7 @@ const Card: React.FC<CardProps> = ({
         className="font-bold py-2 px-4 rounded"
         onClick={() => alert(`Donate to user ${userId}`)}
       >
-        Donate
+        <Link href="/donation-thanks">Donate</Link>
       </Button>
     </div>
   );

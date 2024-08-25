@@ -7,7 +7,7 @@ import {
 
 export default function AccordionSection() {
   return (
-    <div className="w-full px-60 mb-20 bg-[#1e1e1e] text-white">
+    <div className="w-full px-60 mb-20 bg-[#333333] text-white">
       <h1 className="font-extrabold text-2xl">
         Most Frequently Asked Questions.:
       </h1>
