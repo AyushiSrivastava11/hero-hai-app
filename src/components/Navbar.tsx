@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 
 const Navbar = () => {
+
   const user = false;
   return (
     <nav className="h-16 w-full flex justify-center text-center items-center pr-8 pl-8">

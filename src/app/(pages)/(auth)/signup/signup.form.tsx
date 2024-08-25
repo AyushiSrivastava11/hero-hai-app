@@ -19,6 +19,8 @@ import { useForm } from "react-hook-form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import signUpFormSchema from "@/zod_schema/signup.schema";
+import axios from "axios";
+
 
 const SignUpForm = () => {
   const { toast } = useToast();
@@ -28,14 +30,14 @@ const SignUpForm = () => {
     resolver: zodResolver(signUpFormSchema),
     defaultValues: {
       emailAddress: "",
-      username: "",
+      name: "",
       password: "",
       passwordConfirm: "",
     },
   });
 
   const [users, setUsers] = useState({
-    username: "",
+    name: "",
     email: "",
     password: "",
   });
@@ -43,26 +45,26 @@ const SignUpForm = () => {
   const handleSignUpSubmit = async (
     values: z.infer<typeof signUpFormSchema>
   ) => {
-    users.username = values.username;
+    users.name = values.name;
     users.email = values.emailAddress;
     users.password = values.password;
     console.log(users);
 
-    // try {
-    //   const response = await axios.post("/api/user/signup", users);
-    //   console.log("Signup success", response.data);
-    //   toast({
-    //     title: "Account Created Successfully",
-    //   });
-    //   router.push("/login");
-    // } catch (error: any) {
-    //   console.log("Signup failed", error.message);
-    //   toast({
-    //     variant: "destructive",
-    //     title: "Account Already Exists",
-    //     description: "Please use another email.",
-    //   });
-    // }
+    try {
+      const response = await axios.post("/api/users/sign-up", users);
+      console.log("Signup success", response.data);
+      toast({
+        title: "Account Created Successfully",
+      });
+      router.push("/");
+    } catch (error: any) {
+      console.log("Signup failed", error.message);
+      toast({
+        variant: "destructive",
+        title: "Account Already Exists",
+        description: "Please use another email.",
+      });
+    }
   };
 
   return (
@@ -98,7 +100,7 @@ const SignUpForm = () => {
             <div className="flex flex-col py-2 text-left">
               <FormField
                 control={form.control}
-                name="username"
+                name="name"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Username</FormLabel>
