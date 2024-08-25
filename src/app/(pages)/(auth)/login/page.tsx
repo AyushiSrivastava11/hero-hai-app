@@ -21,19 +21,15 @@ const LoginPage = () => {
               >
                 <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
               </svg>
-              Tele FUNICULAR
+              Hero Hai App
             </div>
           </Link>
           <div className="relative z-20 mt-auto">
             <blockquote className="space-y-2">
               <p className="text-lg">
-                &ldquo;All knowledge attains its ethical value and its human
-                significance only by the human sense in which it is employed.
-                Only a good man can be a great physician.&rdquo;
+                &ldquo;Provding best medical care to animals with the power of
+                the community. &rdquo;
               </p>
-              <footer className="text-sm">
-                - Hermann Nothnagel (1841 - 1905).
-              </footer>
             </blockquote>
           </div>
         </div>

@@ -21,18 +21,15 @@ const ForgotPasswordPage = () => {
               >
                 <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
               </svg>
-              Tele FUNICULAR
+              Hero Hai App
             </div>
           </Link>
           <div className="relative z-20 mt-auto">
             <blockquote className="space-y-2">
               <p className="text-lg">
-                &ldquo;The fact that your patient gets well does not prove that
-                your diagnosis was correct.&rdquo;
+                &ldquo;Provding best medical care to animals with the power of
+                the community. &rdquo;
               </p>
-              <footer className="text-sm">
-                - Samuel J. Meltzer (1851 - 1921).
-              </footer>
             </blockquote>
           </div>
         </div>
